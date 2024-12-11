@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="790.0" prefWidth="1158.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="historyController">
+   <children>
+      <ImageView fitHeight="797.0" fitWidth="1166.0" layoutX="-1.0" layoutY="-1.0" pickOnBounds="true">
+         <image>
+            <Image url="@img/pexels-pixabay-258154.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="290.0" layoutY="3.0" prefHeight="790.0" prefWidth="579.0">
+         <children>
+            <Label layoutX="7.0" layoutY="43.0" prefHeight="662.0" prefWidth="565.0" text="O Hotel Manta, localizado em Pelotas, é um estabelecimento que oferece conforto e hospitalidade aos seus hóspedes. Vamos viajar no tempo e explorar a trajetória desse hotel, desde sua fundação até os dias atuais. No início do século XX, Pelotas passava por transformações significativas. A cidade, outrora conhecida por sua indústria charqueadora, viu-se diante de mudanças econômicas e urbanas. Com o declínio dessa atividade, novas oportunidades surgiram, e foi nesse contexto que o Hotel Manta teve sua origem. O Hotel Manta foi fundado por visionários que reconheceram a necessidade de um espaço acolhedor para viajantes, turistas e moradores da cidade. Inspirados pela modernização do espaço urbano, com melhorias como iluminação pública, saneamento básico e transporte público, eles decidiram criar um local que oferecesse mais do que apenas hospedagem: uma experiência memorável.Com determinação, os fundadores adquiriram um terreno estratégico no coração de Pelotas. O local escolhido era próximo a pontos importantes, como o Pelotas Shopping e o Aeroporto Internacional de Pelotas. A construção do hotel começou, e logo ele se tornou um marco na hospitalidade da cidade. O Hotel Manta sempre se destacou por sua atenção aos detalhes. Os quartos oferecem conforto, com ar-condicionado, TV a cabo e banheiros bem equipados. A suíte principal, com sua banheira de hidromassagem, é um refúgio para os hóspedes mais exigentes.Além disso, o hotel conta com uma piscina coberta, perfeita para relaxar após um dia de passeios pela cidade. A equipe da recepção, disponível 24 horas, está sempre pronta para atender às necessidades dos hóspedes. Hoje, o Hotel Manta continua a receber visitantes de todo o mundo. Sua história é parte integrante da rica tapeçaria de Pelotas, e sua dedicação à hospitalidade permanece inabalável.Se você está em busca de uma estadia acolhedora e conveniente em Pelotas, o Hotel Manta é o lugar ideal para se hospedar. Venha fazer parte dessa história e desfrutar de tudo o que a cidade tem a oferecer!" textFill="#f81111" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="120.0" layoutY="14.0" prefHeight="58.0" prefWidth="340.0" text="Saiba mais sobre nós" textFill="#f2d622">
+               <font>
+                  <Font name="System Bold Italic" size="33.0" />
+               </font>
+            </Label>
+            <Label fx:id="inicioLabel" layoutX="222.0" layoutY="705.0" onMouseClicked="#inicioAction" onMouseEntered="#inicioPopAction" onMouseExited="#inicioExitAction" prefHeight="58.0" prefWidth="136.0" style="-fx-border-color: #ffffff; -fx-border-width: 3;" text="Inicio" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="34.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+         </children>
+      </Pane>
+      <ImageView fitHeight="197.0" fitWidth="269.0" layoutX="-1.0" layoutY="-1.0" pickOnBounds="true">
+         <image>
+            <Image url="@img/3d12107214ca42f6bb11fc5aa85fd8a4.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="197.0" fitWidth="269.0" layoutY="196.0" pickOnBounds="true">
+         <image>
+            <Image url="@img/f60d3ae3c0964ac582ee85ae38003400.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="197.0" fitWidth="269.0" layoutX="-1.0" layoutY="395.0" pickOnBounds="true">
+         <image>
+            <Image url="@img/efb2f9efe67f4fccb2966b703340df18.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="205.0" fitWidth="269.0" layoutY="592.0" pickOnBounds="true">
+         <image>
+            <Image url="@img/1090921cf33748bbac5c93443765bbce.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="197.0" fitWidth="269.0" layoutX="896.0" layoutY="-1.0" pickOnBounds="true">
+         <image>
+            <Image url="@img/04fb51e063a245b9be00eafed15cb3c1.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="197.0" fitWidth="269.0" layoutX="896.0" layoutY="196.0" pickOnBounds="true">
+         <image>
+            <Image url="@img/90b2515443664c2eaed66d3609cc7b34.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="197.0" fitWidth="269.0" layoutX="896.0" layoutY="395.0" pickOnBounds="true">
+         <image>
+            <Image url="@img/4c178356bed64aa495ac1ec64ac8a5a6.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="205.0" fitWidth="269.0" layoutX="896.0" layoutY="592.0" pickOnBounds="true">
+         <image>
+            <Image url="@img/406081a93014494e92aaf99b36531815.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>
