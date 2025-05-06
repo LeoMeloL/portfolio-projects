@@ -1,18 +1,38 @@
-## Getting Started
+# ❌⭕ Tic-Tac-Toe AI – Minimax Algorithm (Java)
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+This project implements an **AI opponent** for the classic game of **Tic-Tac-Toe**, using the **Minimax algorithm** in Java. The AI plays optimally, ensuring it never loses and always makes the best possible move.
 
-## Folder Structure
+## 🧠 What is Minimax?
 
-The workspace contains two folders by default, where:
+The **Minimax algorithm** is a recursive decision-making algorithm used in turn-based games. It simulates all possible future game states to choose the move that minimizes the opponent's chances of winning, assuming both players play optimally.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+In Tic-Tac-Toe, Minimax explores the entire game tree due to its manageable size, making it perfect for this kind of project.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## 🎮 Features
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+- ✅ Play against an unbeatable AI
+- 🧠 Optimal decision-making with full Minimax recursion
+- 🔄 Supports human vs AI or AI vs AI modes
+- 👁️ Simple console-based board display
+- 🧪 Clean and modular code for experimentation
 
-## Dependency Management
+## 🧰 Technologies Used
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+- Java (JDK 8+)
+- No external libraries required
+
+## 🧠 How the AI Works
+Evaluates all available moves.
+
+For each move, recursively simulates the outcome.
+
+Scores game states:
+
++10 for a win, -10 for a loss, 0 for draw
+
+Chooses the move that maximizes its minimum guaranteed score.
+
+The AI assumes the human player plays optimally.
+
+##👨‍💻 Author
+Developed by Leonardo Melo as part of an artificial intelligence project.
