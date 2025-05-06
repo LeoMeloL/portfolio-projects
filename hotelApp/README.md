@@ -1,18 +1,22 @@
-## Getting Started
+# 🏨 Sistema de Gerenciamento de Hotel
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Este é um projeto completo de sistema de gerenciamento de hotel, com funcionalidades como visualização de quartos disponíveis, criação de contas, aluguel de quartos, pagamento e administração geral do hotel.
 
-## Folder Structure
+## 📋 Funcionalidades
 
-The workspace contains two folders by default, where:
+- 🔍 **Verificar Quartos Disponíveis**
+- 👤 **Criar Conta de Hóspede**
+- 🛏️ **Alugar Quartos**
+- 💳 **Efetuar Pagamentos**
+- 🧾 **Gerenciamento de Reservas**
+- 🛠️ **Painel de Administração (opcional)**
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## 🧑‍💻 Tecnologias Utilizadas
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+- Linguagem: `Python` / `Java` / `C++` (especifique a sua)
+- Banco de Dados: `SQLite` / `MySQL` / outro (se aplicável)
+- Interface Gráfica: `Tkinter` / `Swing` / CLI / Web (especifique)
+- Outras Bibliotecas: `pandas`, `datetime`, etc. (caso haja)
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+## 🗂️ Estrutura do Projeto
 
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
