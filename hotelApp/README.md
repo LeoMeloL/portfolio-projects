@@ -1,22 +1,34 @@
-# 🏨 Sistema de Gerenciamento de Hotel
+# 🏨 Hotel Management System
 
-Este é um projeto completo de sistema de gerenciamento de hotel, com funcionalidades como visualização de quartos disponíveis, criação de contas, aluguel de quartos, pagamento e administração geral do hotel.
+This is a complete **Hotel Management System** developed in Java using **JavaFX** for the user interface and **PostgreSQL** as the database. The system allows guests to view available rooms, create accounts, make reservations, process payments, and more.
 
-## 📋 Funcionalidades
+## 📋 Features
 
-- 🔍 **Verificar Quartos Disponíveis**
-- 👤 **Criar Conta de Hóspede**
-- 🛏️ **Alugar Quartos**
-- 💳 **Efetuar Pagamentos**
-- 🧾 **Gerenciamento de Reservas**
-- 🛠️ **Painel de Administração (opcional)**
+- 🔍 View available rooms
+- 👤 Create guest accounts
+- 🛏️ Book hotel rooms
+- 💳 Process payments
+- 🧾 Manage reservations
+- 🛠️ Admin dashboard
 
-## 🧑‍💻 Tecnologias Utilizadas
+## 🧑‍💻 Technologies Used
 
-- Linguagem: `Python` / `Java` / `C++` (especifique a sua)
-- Banco de Dados: `SQLite` / `MySQL` / outro (se aplicável)
-- Interface Gráfica: `Tkinter` / `Swing` / CLI / Web (especifique)
-- Outras Bibliotecas: `pandas`, `datetime`, etc. (caso haja)
+- **Language:** Java
+- **UI Framework:** JavaFX
+- **Database:** PostgreSQL
 
-## 🗂️ Estrutura do Projeto
+## 🗂️ Project Structure
+
+hotelApp/
+├── src/
+│ ├── #All main files
+├── README.md
+├── pom.xml or build.gradle # Build configuration
+|── Sql/
+| ├──System.txt #Database configs
+|── bin/
+| ├── img/
+│ │ └── #Image files
+|── lib/
+| ├── #Dependencies
 
