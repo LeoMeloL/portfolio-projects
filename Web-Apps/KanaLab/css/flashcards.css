@@ -1,0 +1,67 @@
+/* ====== Flashcards ====== */
+#flashcard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#flashcard {
+  background: white;
+  border-radius: 16px;
+  padding: 40px 60px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 320px;
+  margin-bottom: 20px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#flashcard:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* ====== Texto do flashcard ====== */
+#question {
+  font-size: 60px;
+  color: #4b4b88;
+  margin-bottom: 20px;
+}
+
+#answer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  width: fit-content;       /* só ocupa o espaço necessário */
+  margin: 0 auto;           /* centraliza o grid dentro do container */
+  font-size: 24px;
+  color: #555;
+  transition: opacity 0.3s ease;
+}
+
+#hard-mode-input {
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  text-align: center;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box; /* Importante para o padding não quebrar a largura */
+}
+
+#hard-mode-input:focus {
+  border-color: #6a6aff;
+  outline: none;
+}
+
+#question-counter {
+  text-align: center;
+  font-weight: 700; /* mais encorpado */
+  margin-bottom: 10px;
+
+  font-family: 'Poppins', Arial, sans-serif;
+  color: #e63946; /* vermelho mais elegante */
+  font-size: 28px;
+  letter-spacing: 2px; /* espaçamento entre caracteres */
+}

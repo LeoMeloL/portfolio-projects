@@ -1,0 +1,564 @@
+/* ====== Estilos gerais ====== */
+body {
+  font-family: "Inter", Arial, sans-serif;
+  background: linear-gradient(135deg, #f2f2ff, #fafaff);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  color: #333;
+}
+
+/* ====== Títulos ====== */
+h1 {
+  color: #4b4b88;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #555;
+}
+
+#start-menu,
+#menu,
+#menu-katakana,
+#sentence-container {
+  background: white;
+  border-radius: 16px;
+  padding: 30px 40px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  width: 340px;
+  transition: all 0.3s ease;
+  margin-bottom: 20px; 
+}
+
+#group-selection {
+  text-align: left;
+  margin: 20px 0;
+}
+
+/* ====== Checkbox customizada ====== */
+#group-selection label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+#group-selection label:hover {
+  color: #4b4b88;
+}
+
+#group-selection input[type="checkbox"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #aaa;
+  border-radius: 5px;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+#group-selection input[type="checkbox"]:checked {
+  background-color: #6a6aff;
+  border-color: #6a6aff;
+}
+
+#group-selection input[type="checkbox"]:checked::after {
+  content: "✔";
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 4px;
+  font-size: 14px;
+}
+
+#sentence-question {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #4b4b88;
+}
+
+#syllable-options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+#selected-order {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #333;
+}
+
+
+/* ====== Botão principal ====== */
+#start-training {
+  background: linear-gradient(135deg, #8e8eff, #6a6aff);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(106, 106, 255, 0.3);
+  transition: all 0.2s ease;
+}
+
+#start-training:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, #7a7aff, #5a5aff);
+}
+
+/* ====== Flashcards ====== */
+#flashcard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#flashcard {
+  background: white;
+  border-radius: 16px;
+  padding: 40px 60px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 320px;
+  margin-bottom: 20px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#flashcard:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* ====== Texto do flashcard ====== */
+#question {
+  font-size: 60px;
+  color: #4b4b88;
+  margin-bottom: 20px;
+}
+
+#answer {
+  font-size: 24px;
+  color: #555;
+  transition: opacity 0.3s ease;
+}
+
+/* ====== Botões do modo treino ====== */
+#show-answer,
+#next {
+  margin: 8px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+#return {
+  margin: 8px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+}
+#show-answer {
+  background-color: #e6e6ff;
+  color: #333;
+}
+
+#show-answer:hover {
+  background-color: #cccaff;
+}
+
+#next {
+  background-color: #6a6aff;
+  color: white;
+}
+
+#next:hover {
+  background-color: #5858e6;
+}
+
+#check-sentence,
+#return-sentence,
+#next-sentence {
+  margin: 8px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+}
+
+#check-sentence:hover,
+#return-sentence:hover,
+#next-sentence:hover{
+  background-color: #5858e6;
+}
+
+.option-btn.correct {
+  background-color: #4caf50 !important;
+  color: white;
+}
+
+.option-btn.wrong {
+  background-color: #f44336 !important;
+  color: white;
+}
+
+.option-btn {
+  display: block;
+  margin: 8px auto;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  background-color: #eee;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.option-btn:hover {
+  background-color: #37e519;
+}
+
+.menu-btn {
+  background: linear-gradient(135deg, #8e8eff, #6a6aff);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 10px;
+  box-shadow: 0 4px 10px rgba(106, 106, 255, 0.3);
+  transition: all 0.2s ease;
+}
+
+.menu-btn:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, #7a7aff, #5a5aff);
+}
+
+#syllable-options .option-btn.selected {
+  background-color: #00ff11; /* Um cinza para parecer desativado */
+  color: #777777;
+  opacity: 0.7;
+  cursor: default;
+}
+
+
+body {
+  background-image: url('img/bg.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* ====== Tela de Login ====== */
+#account-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: white;
+  border-radius: 12px;
+  padding: 20px 30px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 260px;
+  text-align: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease;
+}
+
+/* Animação de entrada suave */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Inputs */
+#account-container input {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1.5px solid #aaa;
+  font-size: 15px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+#account-container input:focus {
+  border-color: #6a6aff;
+  box-shadow: 0 0 6px rgba(106, 106, 255, 0.3);
+  outline: none;
+}
+
+/* Botões */
+#account-container button {
+  width: 48%;
+  margin: 6px 1%;
+  background: linear-gradient(135deg, #8e8eff, #6a6aff);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(106, 106, 255, 0.2);
+  transition: all 0.2s ease;
+}
+
+#account-container button:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, #7a7aff, #5a5aff);
+}
+
+/* ====== Exibição do Usuário Logado ====== */
+#user-info {
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 8px;
+  padding: 8px 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-size: 15px;
+  color: #4b4b88;
+  font-weight: 500;
+  z-index: 999;
+  transition: opacity 0.2s ease;
+
+  border: none;
+  font-family: inherit;
+  text-align: left;
+}
+
+#user-info:hover {
+  opacity: 0.8;
+}
+
+#user-info p {
+  margin: 0;
+  pointer-events: none;
+}
+
+.lives-display {
+  text-align: center;
+  font-size: 24px; 
+  color: #ff4d4d;
+  margin-top: 10px;
+  height: auto;
+}
+
+/* ====== Popup de Feedback (Certo/Errado) ====== */
+#feedback-popup {
+  /* Começa invisível e fora de tela */
+  display: none;
+  opacity: 0;
+  
+  /* Posição: Centralizado na tela, por cima de tudo */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.5); /* Começa pequeno */
+  z-index: 1000;
+  
+  /* Aparência */
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  padding: 30px 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  
+  /* Estilo do Texto (✔ ou ✖) */
+  font-size: 70px; /* Tamanho grande do ícone */
+  font-weight: bold;
+}
+
+/* Classe de estado: CORRETO (Verde) */
+#feedback-popup.correct {
+  color: #4CAF50; /* Verde */
+}
+
+/* Classe de estado: ERRADO (Vermelho) */
+#feedback-popup.wrong {
+  color: #f44336; /* Vermelho */
+}
+
+/* Classe 'show' que DISPARA a animação */
+#feedback-popup.show {
+  display: block;
+  /* Aplica a animação 'popAndFade' com duração de 1.2 segundos */
+  animation: popAndFade 1.2s ease-out;
+}
+
+/* A Animação (Keyframes) */
+@keyframes popAndFade {
+  /* 1. Aparece e cresce */
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.5);
+  }
+  20% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.1); /* Efeito "pop" */
+  }
+  40% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1); /* Volta ao normal */
+  }
+  
+  /* 2. Fica visível por um tempo */
+  80% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  /* 3. Desaparece */
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.9);
+  }
+}
+
+/* ====== Modal de Estatísticas ====== */
+
+/* O fundo escuro (overlay) */
+#stats-modal-overlay {
+  /* Começa escondido */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Fundo preto semi-transparente */
+  z-index: 900;
+  
+  /* Flexbox para centralizar a janela */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  /* Esconde por padrão (será controlado pelo JS) */
+  display: none; 
+}
+
+/* O conteúdo da janela (o card branco) */
+#stats-modal-content {
+  background: white;
+  border-radius: 16px;
+  padding: 25px 40px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  text-align: center;
+}
+
+#stats-modal-content h2 {
+  color: #4b4b88;
+  margin-top: 0;
+  margin-bottom: 20px;
+  word-break: break-all; /* Garante que nomes longos quebrem a linha */
+}
+
+/* A lista de estatísticas */
+#stats-list {
+  text-align: left;
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+#stats-list p {
+  margin: 10px 0;
+  color: #333;
+  display: flex;
+  justify-content: space-between; /* Alinha o nome à esquerda e o nº à direita */
+}
+
+#stats-list span {
+  font-weight: bold;
+  color: #4b4b88;
+}
+
+#stats-list hr {
+  border: none;
+  border-top: 1px solid #eee;
+  margin: 15px 0;
+}
+
+/* Botão de fechar (reutilizando seu estilo) */
+#stats-close-btn {
+  background: linear-gradient(135deg, #8e8eff, #6a6aff);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+#stats-close-btn:hover {
+  background: linear-gradient(135deg, #7a7aff, #5a5aff);
+}
+
+.mode-toggle {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.mode-toggle input[type="checkbox"] {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+#xp-container {
+  position: relative;
+  width: 300px;
+  height: 25px;
+  background-color: #ddd;
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 10px auto;
+  box-shadow: 0 0 4px rgba(0,0,0,0.2);
+}
+
+#xp-bar {
+  height: 100%;
+  width: 0%;
+  background-color: #4caf50; /* verde */
+  transition: width 0.4s ease;
+}
+
+#xp-text {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 0;
+  line-height: 25px;
+  font-weight: bold;
+  color: #333;
+}
+

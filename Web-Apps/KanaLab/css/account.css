@@ -1,0 +1,88 @@
+/* ====== Tela de Login ====== */
+#account-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: white;
+  border-radius: 12px;
+  padding: 20px 30px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 260px;
+  text-align: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease;
+}
+
+/* Animação de entrada suave */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Inputs */
+#account-container input {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1.5px solid #aaa;
+  font-size: 15px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+#account-container input:focus {
+  border-color: #6a6aff;
+  box-shadow: 0 0 6px rgba(106, 106, 255, 0.3);
+  outline: none;
+}
+
+/* Botões */
+#account-container button {
+  width: 48%;
+  margin: 6px 1%;
+  background: linear-gradient(135deg, #8e8eff, #6a6aff);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(106, 106, 255, 0.2);
+  transition: all 0.2s ease;
+}
+
+#account-container button:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, #7a7aff, #5a5aff);
+}
+
+/* ====== Exibição do Usuário Logado ====== */
+#user-info {
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 8px;
+  padding: 8px 14px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-size: 15px;
+  color: #4b4b88;
+  font-weight: 500;
+  z-index: 999;
+  transition: opacity 0.2s ease;
+
+  border: none;
+  font-family: inherit;
+  text-align: left;
+}
+
+#user-info:hover {
+  opacity: 0.8;
+}
+
+#user-info p {
+  margin: 0;
+  pointer-events: none;
+}

@@ -1,0 +1,90 @@
+/* ====== Estilos gerais ====== */
+body {
+  font-family: "Inter", Arial, sans-serif;
+  background: linear-gradient(135deg, #f2f2ff, #fafaff);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  color: #333;
+}
+
+/* ====== Títulos ====== */
+h1 {
+  color: #4b4b88;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #555;
+}
+
+#start-menu,
+#menu,
+#menu-katakana,
+#sentence-container {
+  background: white;
+  border-radius: 16px;
+  padding: 30px 40px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  width: 340px;
+  transition: all 0.3s ease;
+  margin-bottom: 20px; 
+}
+
+#group-selection {
+  text-align: left;
+  margin: 20px 0;
+}
+
+body {
+  background-image: url('../img/bg1.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  margin: 0;
+}
+
+#test-hiragana-btn {
+  left: 20px;          /* Distância da borda esquerda */
+  top: 50%;            /* Centralizado verticalmente */
+  transform: translateY(-50%); /* Ajuste fino de centralização */
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 18px;
+  font-size: 16px;
+  cursor: pointer;
+  z-index: 1000;        /* Fica acima de outros elementos */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  transition: background-color 0.3s ease;
+}
+
+#test-hiragana-btn:hover {
+  background-color: #45a049;
+}
+
+#test-menu {
+  background: white;
+  border-radius: 16px;
+  padding: 30px 40px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  width: 200px;
+  height: 250px;
+  transition: all 0.3s ease;
+  margin-bottom: 20px;
+
+  /* 🔹 Diferenças principais */
+  position: fixed;     /* Fixa na tela */
+  left: 40px;          /* Distância da borda esquerda */
+  top: 37%;            /* Centraliza verticalmente */
+  transform: translateY(-50%);
+  z-index: 1000;       /* Garante que fique acima do fundo */
+}
+
+

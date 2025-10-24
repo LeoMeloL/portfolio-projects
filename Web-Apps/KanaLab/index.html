@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+  <title>Treino de Hiragana</title>
+  <link rel="stylesheet" href="css/background.css" />
+  <link rel="stylesheet" href="css/account.css" />
+  <link rel="stylesheet" href="css/checkbox.css" />
+  <link rel="stylesheet" href="css/exp.css" />
+  <link rel="stylesheet" href="css/flashcards.css" />
+  <link rel="stylesheet" href="css/menu.css" />
+  <link rel="stylesheet" href="css/statistics.css" />
+  <link rel="stylesheet" href="css/training.css" />
+</head>
+
+<body>
+  <div id="test-menu">
+    <h2>Testes</h2>
+    <button class="menu-btn" id="test-hiragana-btn">Testar Hiragana</button>
+    <!-- futuramente: -->
+    <!-- <button class="menu-btn" id="test-katakana-btn">Testar Katakana</button> -->
+    <!-- <button class="menu-btn" id="test-kanji-btn">Testar Kanji</button> -->
+  </div>
+    <!-- Menu Inicial -->
+  <div id="start-menu">
+    <h1>KanaLab</h1>
+    <p>Escolha o sistema de escrita para treinar:</p>
+    <button class="menu-btn" id="hiragana-btn">Hiragana</button>
+    <button class="menu-btn" id="katakana-btn">Katakana</button>
+    <button class="menu-btn" id="kanji-btn">Kanji</button>
+    <button class="menu-btn" id="sentence-btn">Frases</button>
+    <div class="mode-toggle">
+      <label>
+        <input type="checkbox" id="inverted-mode">
+        Inverted Mode
+      </label>
+          <label>
+        <input type="checkbox" id="hard-mode-check">
+        Hard Mode
+      </label>
+    </div>
+
+
+
+  </div>
+
+
+  <div id="menu" style="display:none;">
+    
+    <h1>Treino de Hiragana</h1>
+    <p>Selecione os grupos que deseja treinar:</p>
+    <div id="group-selection"></div>
+    <button id="start-training">Começar treino</button>
+  </div>
+
+  <div id="menu-katakana" style="display:none;">
+    <h1>Treino de Katakana</h1>
+    <p>Selecione os grupos que deseja treinar:</p>
+    <div id="group-selection"></div>
+    <button id="start-training">Começar treino</button>
+  </div>
+
+  <div id="sentence-container" style="display:none;">
+    <div class="lives-display"></div>
+    <h1>Treino de Frases</h1>
+    <div id="sentence-question"></div>
+    <div id="syllable-options"></div>
+    <div id="selected-order"></div>
+    <button id="check-sentence">Verificar</button>
+    <button id="next-sentence">Próxima Frase</button>
+    <button id="return-sentence">Voltar ao Menu</button>
+  </div>
+
+
+  <div id="flashcard-container" style="display:none;">
+    <div id="flashcard">
+      <div id="question-counter"></div>
+      <div class="lives-display"></div>
+      <div id="question"></div>
+      <div id="answer"></div>
+    </div>
+    <button id="show-answer">Mostrar resposta</button>
+    <button id="next">Próximo</button>
+    <button id="return">Voltar Menu</button>
+  </div>
+
+  <div id="account-container">
+    <h2>Login</h2>
+    <input id="username" placeholder="Usuário">
+    <input id="password" placeholder="Senha" type="password">
+    <button onclick="register()">Registrar</button>
+    <button onclick="login()">Entrar</button>
+  </div>
+
+  <button id="user-info" style="display:none;">
+    <p>👤 <span id="username-display"></span></p>
+  </button>
+
+  <div id="feedback-popup"></div>
+
+  <div id="stats-modal-overlay" style="display: none;">
+    <div id="stats-modal-content">
+      <h2>Estatísticas de <span id="stats-username"></span></h2>
+      <div id="stats-list">
+        <p>Hiragana: <span id="stats-hiragana">0</span></p>
+        <p>Katakana: <span id="stats-katakana">0</span></p>
+        <p>Kanji: <span id="stats-kanji">0</span></p>
+        <p>Frases: <span id="stats-sentences">0</span></p>
+        <p>Testes Hiragana: <span id="tests-hiragana">0</span></p>
+        <p>Testes Katakana: <span id="tests-katakana">0</span></p>
+        <p>Testes Kanji: <span id="tests-kanji">0</span></p>
+        <hr>
+        <p>Derrotas: <span id="stats-losses">0</span></p>
+      </div>
+      <button id="stats-close-btn">Fechar</button>
+    </div>
+  </div>
+
+  <div id="xp-container">
+    <div id="xp-bar"></div>
+    <span id="xp-text">0 / 100 XP</span>
+  </div>
+
+
+  <script src="data.js"></script>
+  <script src="js/utils.js"></script>
+  <script src="js/account.js"></script>
+  <script src="js/flashcards.js"></script>
+  <script src="js/sentences.js"></script>
+  <script src="js/tests.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

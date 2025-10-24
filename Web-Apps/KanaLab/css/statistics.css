@@ -1,0 +1,93 @@
+/* ====== Modal de Estatísticas ====== */
+
+/* O fundo escuro (overlay) */
+#stats-modal-overlay {
+  /* Começa escondido */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Fundo preto semi-transparente */
+  z-index: 900;
+  
+  /* Flexbox para centralizar a janela */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  /* Esconde por padrão (será controlado pelo JS) */
+  display: none; 
+}
+
+/* O conteúdo da janela (o card branco) */
+#stats-modal-content {
+  background: white;
+  border-radius: 16px;
+  padding: 25px 40px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  text-align: center;
+}
+
+#stats-modal-content h2 {
+  color: #4b4b88;
+  margin-top: 0;
+  margin-bottom: 20px;
+  word-break: break-all; /* Garante que nomes longos quebrem a linha */
+}
+
+/* A lista de estatísticas */
+#stats-list {
+  text-align: left;
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+#stats-list p {
+  margin: 10px 0;
+  color: #333;
+  display: flex;
+  justify-content: space-between; /* Alinha o nome à esquerda e o nº à direita */
+}
+
+#stats-list span {
+  font-weight: bold;
+  color: #4b4b88;
+}
+
+#stats-list hr {
+  border: none;
+  border-top: 1px solid #eee;
+  margin: 15px 0;
+}
+
+/* Botão de fechar (reutilizando seu estilo) */
+#stats-close-btn {
+  background: linear-gradient(135deg, #8e8eff, #6a6aff);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+#stats-close-btn:hover {
+  background: linear-gradient(135deg, #7a7aff, #5a5aff);
+}
+
+.mode-toggle {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.mode-toggle input[type="checkbox"] {
+  transform: scale(1.2);
+  cursor: pointer;
+}

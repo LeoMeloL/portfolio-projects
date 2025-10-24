@@ -1,0 +1,193 @@
+/* ====== Botões do modo treino ====== */
+#show-answer,
+#next {
+  margin: 8px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+#return {
+  margin: 8px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+}
+#show-answer {
+  background-color: #e6e6ff;
+  color: #333;
+}
+
+#show-answer:hover {
+  background-color: #cccaff;
+}
+
+#next {
+  background-color: #6a6aff;
+  color: white;
+}
+
+#next:hover {
+  background-color: #5858e6;
+}
+
+#check-sentence,
+#return-sentence,
+#next-sentence {
+  margin: 8px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+}
+
+#check-sentence:hover,
+#return-sentence:hover,
+#next-sentence:hover{
+  background-color: #5858e6;
+}
+
+.option-btn.correct {
+  background-color: #4caf50 !important;
+  color: white;
+}
+
+.option-btn.wrong {
+  background-color: #f44336 !important;
+  color: white;
+}
+
+.option-btn {
+  display: block;
+  margin: 8px auto;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  background-color: #eee;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.option-btn:hover {
+  background-color: #37e519;
+}
+
+.menu-btn {
+  background: linear-gradient(135deg, #8e8eff, #6a6aff);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 10px;
+  box-shadow: 0 4px 10px rgba(106, 106, 255, 0.3);
+  transition: all 0.2s ease;
+}
+
+.menu-btn:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, #7a7aff, #5a5aff);
+}
+
+#syllable-options .option-btn.selected {
+  background-color: #00ff11; /* Um cinza para parecer desativado */
+  color: #777777;
+  opacity: 0.7;
+  cursor: default;
+}
+
+.lives-display {
+  text-align: center;
+  font-size: 24px; 
+  color: #ff4d4d;
+  margin-top: 10px;
+  height: auto;
+}
+
+/* ====== Popup de Feedback (Certo/Errado) ====== */
+#feedback-popup {
+  /* Começa invisível e fora de tela */
+  display: none;
+  opacity: 0;
+  
+  /* Posição: Centralizado na tela, por cima de tudo */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.5); /* Começa pequeno */
+  z-index: 1000;
+  
+  /* Aparência */
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  padding: 30px 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  
+  /* Estilo do Texto (✔ ou ✖) */
+  font-size: 70px; /* Tamanho grande do ícone */
+  font-weight: bold;
+}
+
+/* Classe de estado: CORRETO (Verde) */
+#feedback-popup.correct {
+  color: #4CAF50; /* Verde */
+}
+
+/* Classe de estado: ERRADO (Vermelho) */
+#feedback-popup.wrong {
+  color: #f44336; /* Vermelho */
+}
+
+/* Classe 'show' que DISPARA a animação */
+#feedback-popup.show {
+  display: block;
+  /* Aplica a animação 'popAndFade' com duração de 1.2 segundos */
+  animation: popAndFade 1.2s ease-out;
+}
+
+/* A Animação (Keyframes) */
+@keyframes popAndFade {
+  /* 1. Aparece e cresce */
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.5);
+  }
+  20% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.1); /* Efeito "pop" */
+  }
+  40% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1); /* Volta ao normal */
+  }
+  
+  /* 2. Fica visível por um tempo */
+  80% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  /* 3. Desaparece */
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.9);
+  }
+}
+
+/* Classe de estado: CONGRATS (Azul) */
+#feedback-popup.congrats {
+  color: #6a6aff; /* O azul/roxo principal do seu app */
+  font-size: 50px; 
+}

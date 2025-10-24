@@ -1,0 +1,28 @@
+#xp-container {
+  position: relative;
+  width: 300px;
+  height: 25px;
+  background-color: #ddd;
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 10px auto;
+  box-shadow: 0 0 4px rgba(0,0,0,0.2);
+}
+
+#xp-bar {
+  height: 100%;
+  width: 0%;
+  background-color: #4caf50; /* verde */
+  transition: width 0.4s ease;
+}
+
+#xp-text {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 0;
+  line-height: 25px;
+  font-weight: bold;
+  color: #333;
+}
+
