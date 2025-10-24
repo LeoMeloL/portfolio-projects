@@ -34,10 +34,14 @@ To run the project:
 
 ## 🧩 Project Structure
 
-eepfakeDetection/
+DeepfakeDetection/
+
 │
+
 ├── DeepfakeDetection.ipynb # Main Jupyter Notebook
+
 ├── README.md # Project documentation
+
 └── requirements.txt # Dependencies
 
 
