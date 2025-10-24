@@ -63,38 +63,38 @@ Here are some of the primary technologies I work with:
 ### 🤖 AI-Projects
 A collection of projects focusing on machine learning, deep learning, and intelligent systems.
 
-* **[Deepfake Detection TCC]](./AI-Projects/Deepfake-Detection):** A comprehensive deepfake detection study comparing CNN, ViT, and hybrid ViT-CNN architectures.
-* **[Breakthru AI Agent]](./AI-Projects/Breakthru):** An intelligent game-playing agent designed to master the complex strategy board game 'Breakthru'.
+* **[Deepfake Detection TCC](./AI-Projects/Deepfake-Detection):** A comprehensive deepfake detection study comparing CNN, ViT, and hybrid ViT-CNN architectures.
+* **[Breakthru AI Agent](./AI-Projects/Breakthru):** An intelligent game-playing agent designed to master the complex strategy board game 'Breakthru'.
 
 ### 📈 Heuristic-Algorithms
 Implementations of metaheuristics and optimization algorithms to solve complex computational problems.
 
-* **[Christofides Algorithm]](./Heuristic-Algorithms/ChristofidesAlgorithm):** An implementation of the Christofides algorithm for the Traveling Salesperson Problem (TSP).
-* **[TSP Approximation Algorithms]](./Heuristic-Algorithms/TSPApproximateAlgorithm):** A project implementing and analyzing another key approximation algorithm for the TSP.
+* **[Christofides Algorithm](./Heuristic-Algorithms/ChristofidesAlgorithm):** An implementation of the Christofides algorithm for the Traveling Salesperson Problem (TSP).
+* **[TSP Approximation Algorithms](./Heuristic-Algorithms/TSPApproximateAlgorithm):** A project implementing and analyzing another key approximation algorithm for the TSP.
 
 ### 🎨 Computer-Graphics
 Projects exploring rendering techniques, geometric modeling, and interactive visual applications.
 
-* **[Procedural Forest]](./Computer-Graphics/Procedurally-Generated-Forest):** A real-time procedural forest rendered in WebGL, featuring advanced soft shadow techniques.
-* **[Soft Shadow Mapping]](./Computer-Graphics/SoftShadowsCG):** A technical demonstration of soft shadow mapping algorithms implemented from scratch in [Language/Library].
+* **[Procedural Forest](./Computer-Graphics/Procedurally-Generated-Forest):** A real-time procedural forest rendered in WebGL, featuring advanced soft shadow techniques.
+* **[Soft Shadow Mapping](./Computer-Graphics/SoftShadowsCG):** A technical demonstration of soft shadow mapping algorithms implemented from scratch in [Language/Library].
 
 ### 🔢 Numerical-Methods
 Practical implementations of mathematical methods for numerical analysis and scientific computing.
 
-* **[ODE Solver]](./Numerical-Methods/differential_equations):** A numerical solver for ordinary differential equations (ODEs) using Euler's method.
-* **[Linear Systems Library]](./Numerical-Methods/linear_systems):** A library for solving linear systems using direct (Cholesky) and iterative (Jacobi, Gauss-Seidel) methods.
+* **[ODE Solver](./Numerical-Methods/differential_equations):** A numerical solver for ordinary differential equations (ODEs) using Euler's method.
+* **[Linear Systems Library](./Numerical-Methods/linear_systems):** A library for solving linear systems using direct (Cholesky) and iterative (Jacobi, Gauss-Seidel) methods.
 
 ### 🎮 Game-Projects
 A selection of games and game-related tools, demonstrating logic, system integration, and design patterns.
 
-* **[Modern Wumpus World]](./Game-Projects/WumpusGame):** A modern, fully-functional GUI implementation of the classic Wumpus World game, expanded with new custom mechanics.
-* **[Genshin Rich Presence]](./Game-Projects/genshin-rpc):** A real-time screen scraper using Tesseract OCR to parse visual game data from Genshin Impact for a custom Discord Rich Presence.
+* **[Modern Wumpus World](./Game-Projects/WumpusGame):** A modern, fully-functional GUI implementation of the classic Wumpus World game, expanded with new custom mechanics.
+* **[Genshin Rich Presence](./Game-Projects/genshin-rpc):** A real-time screen scraper using Tesseract OCR to parse visual game data from Genshin Impact for a custom Discord Rich Presence.
 
 ### 🌐 Web-Apps
 Full-stack web applications showcasing both front-end and back-end development.
 
-* **[Gamified Japanese Learning]](./Web-Apps/Your-Japanese-App-Folder):** A full-stack, gamified e-learning platform designed for Japanese language acquisition.
-* **[Google Drive Automator]](./Web-Apps/Your-Google-Drive-Folder):** A back-end service utilizing the Google Drive API to automate cloud file management and folder organization.
+* **[Gamified Japanese Learning](./Web-Apps/Your-Japanese-App-Folder):** A full-stack, gamified e-learning platform designed for Japanese language acquisition.
+* **[Google Drive Automator](./Web-Apps/Your-Google-Drive-Folder):** A back-end service utilizing the Google Drive API to automate cloud file management and folder organization.
 
 ---
 
