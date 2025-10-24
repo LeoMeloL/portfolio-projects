@@ -93,7 +93,7 @@ A selection of games and game-related tools, demonstrating logic, system integra
 ### 🌐 Web-Apps
 Full-stack web applications showcasing both front-end and back-end development.
 
-* **[Gamified Japanese Learning](./Web-Apps/Your-Japanese-App-Folder):** A full-stack, gamified e-learning platform designed for Japanese language acquisition.
+* **[Gamified Japanese Learning](./Web-Apps/KanaLab):** A full-stack, gamified e-learning platform designed for Japanese language acquisition.
 * **[Google Drive Automator](./Web-Apps/Your-Google-Drive-Folder):** A back-end service utilizing the Google Drive API to automate cloud file management and folder organization.
 
 ---
