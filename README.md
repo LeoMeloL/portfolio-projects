@@ -81,8 +81,8 @@ Projects exploring rendering techniques, geometric modeling, and interactive vis
 ### 🔢 Numerical-Methods
 Practical implementations of mathematical methods for numerical analysis and scientific computing.
 
-* **[ODE Solver](./Numerical-Methods/differential_equations):** A numerical solver for ordinary differential equations (ODEs) using Euler's method.
-* **[Linear Systems Library](./Numerical-Methods/linear_systems):** A library for solving linear systems using direct (Cholesky) and iterative (Jacobi, Gauss-Seidel) methods.
+* **[ODE Solver](./numerical-methods/differential_equations):** A numerical solver for ordinary differential equations (ODEs) using Euler's method.
+* **[Linear Systems Library](./numerical-methods/linear_systems):** A library for solving linear systems using direct (Cholesky) and iterative (Jacobi, Gauss-Seidel) methods.
 
 ### 🎮 Game-Projects
 A selection of games and game-related tools, demonstrating logic, system integration, and design patterns.
