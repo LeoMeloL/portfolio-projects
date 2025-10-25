@@ -45,7 +45,9 @@ This project is built with 100% Vanilla JavaScript, HTML5, and CSS3, with no ext
 To run a local copy of this project:
 
 1.  Clone the repository:
-    ```sh
-    git clone [https://github.com/LeoMeloL/kanalab.git](https://github.com/LeoMeloL/kanalab.git)
-    ```
+
+```sh
+git clone https://github.com/LeoMeloL/kanalab.git
+```
+
 2.  Open the `index.html` file in your browser.
