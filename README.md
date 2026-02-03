@@ -64,7 +64,7 @@ Here are some of the primary technologies I work with:
 A collection of projects focusing on machine learning, deep learning, and intelligent systems.
 
 * **[Deepfake Detection TCC](./AI-Projects/Deepfake-Detection):** A comprehensive deepfake detection study comparing CNN, ViT, and hybrid ViT-CNN architectures.
-* **[Breakthru AI Agent](./AI-Projects/Breakthru):** An intelligent game-playing agent designed to master the complex strategy board game 'Breakthru'.
+* **[TriviaAI](./AI-Projects/triviaAI):** TriviaAI is a next-generation trivia application powered by Google's Gemini API.
 
 ### 📈 Heuristic-Algorithms
 Implementations of metaheuristics and optimization algorithms to solve complex computational problems.
