@@ -1,7 +1,0 @@
-{
-  "name": "TriviaAI: Dynamic Host",
-  "description": "A next-gen trivia game featuring a dynamic AI host with distinct personalities. Play in Classic Mode with TTS and Search Grounding, or have a real-time voice conversation in Live Mode.",
-  "requestFramePermissions": [
-    "microphone"
-  ]
-}
