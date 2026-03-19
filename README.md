@@ -1,6 +1,6 @@
 # Leonardo Melo's Computer Science Portfolio
 
-Welcome to my portfolio! I am a final-year Computer Science student with a passion for building challenging and meaningful projects. This repository serves as a curated collection of my work, showcasing my skills in Artificial Intelligence, algorithm design, software development, and more.
+Welcome to my portfolio! I am a final-year Computer Science student. This repository serves as a curated collection of my work, showcasing my skills in Artificial Intelligence, algorithm design, software development, and more.
 
 Feel free to explore the different categories. Each project is self-contained in its folder and includes its own detailed `README.md` with in-depth explanations, technical challenges, and setup instructions.
 
